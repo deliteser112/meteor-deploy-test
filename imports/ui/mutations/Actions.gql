@@ -1,0 +1,5 @@
+mutation createAction( $name: String!, $resolve: String! ) {
+  createAction( name: $name, resolve: $resolve ) {
+    _id
+  }
+}

@@ -1,0 +1,6 @@
+query getDice {
+  getDice {
+    _id
+    name
+  }
+}

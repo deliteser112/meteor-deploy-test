@@ -1,0 +1,14 @@
+type Rolls {
+  _id: ID!
+  device: String!
+  dice: String!
+}
+
+extend type Query {
+  getRoll (id: ID!): Rolls
+  getRolls: [Rolls]
+}
+
+extend type Mutation {
+  createRoll( device: String!, dice: String! ): Rolls
+}

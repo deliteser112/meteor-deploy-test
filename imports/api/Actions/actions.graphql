@@ -1,0 +1,15 @@
+type Actions {
+  _id: ID!
+  name: String!
+  resolve: String!
+}
+
+extend type Query {
+  getAction (id: ID!): Actions
+  getActions: [Actions]
+}
+
+extend type Mutation {
+  createAction( name: String!, resolve: String! ): Actions
+  deleteAction( id: ID! ): Actions
+}

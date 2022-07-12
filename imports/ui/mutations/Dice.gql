@@ -1,0 +1,5 @@
+mutation createDice( $did: String!, $name: String! ) {
+  createDice( did: $did, name: $name ) {
+    _id
+  }
+}

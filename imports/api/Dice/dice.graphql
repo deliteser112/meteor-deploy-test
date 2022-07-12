@@ -1,0 +1,16 @@
+type Dice {
+  _id: ID!
+  did: String!
+  name: String!
+  image: String
+  action: String
+}
+
+extend type Query {
+  getDie (id: ID!): Dice
+  getDice: [Dice]
+}
+
+extend type Mutation {
+  createDice( did: String!, name: String!, image: String , action: String ): Dice
+}

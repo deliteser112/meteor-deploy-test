@@ -1,0 +1,5 @@
+mutation createDevice( $mac: String!, $name: String! ) {
+  createDevice( mac: $mac, name: $name ) {
+    _id
+  }
+}

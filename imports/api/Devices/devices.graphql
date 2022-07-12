@@ -1,0 +1,14 @@
+type Device {
+  _id: ID!
+  mac: String! @unique
+  name: String!
+}
+
+extend type Query {
+  getDevice (id: ID!): Device
+  getDevices: [Device]
+}
+
+extend type Mutation {
+  createDevice( mac: String!, name: String! ): Device!
+}

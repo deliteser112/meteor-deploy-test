@@ -1,0 +1,7 @@
+query getDevices {
+  getDevices {
+    _id
+    mac
+    name
+  }
+}

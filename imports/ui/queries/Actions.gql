@@ -1,0 +1,6 @@
+query getActions {
+  getActions {
+    _id
+    name
+  }
+}

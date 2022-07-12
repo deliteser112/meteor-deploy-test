@@ -1,0 +1,5 @@
+mutation deleteAction( $id: ID! ) {
+  createAction( id: $id ) {
+    _id
+  }
+}

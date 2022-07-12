@@ -1,0 +1,5 @@
+mutation createRoll( $device: String!, $dice: String! ) {
+  createRoll( device: $device, dice: $dice ) {
+    _id
+  }
+}

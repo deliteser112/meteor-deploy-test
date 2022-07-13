@@ -1,6 +1,6 @@
 type Device {
   _id: ID!
-  mac: String! @unique
+  mac: String!
   name: String!
 }
 
